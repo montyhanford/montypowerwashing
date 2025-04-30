@@ -2,7 +2,7 @@ Follow these instructions to run the project locally.
 
 ### Prerequisites
 
-- [Live Server Extension]
+Live Server Extension
 
 ### Running the Project
 
@@ -21,9 +21,8 @@ This project uses the **Google Maps JavaScript API**, which requires an API key.
 2. Create a new project.
 3. Enable the **Maps JavaScript API**.
 4. Go to **Credentials** and create an **API key**.
-5. (Optional but recommended) Restrict your key to specific referrers or APIs.
 
 ### Add Your API Key
 
 1. Open the `estimate-tool.html`
-2. Replace `YOUR_API_KEY_HERE` in line 9 in the script URL with your actual API key:
+2. Replace `YOUR_API_KEY` in line 9 in the script URL with your actual API key:
