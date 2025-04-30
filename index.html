@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "styles.css" type = "text/css" rel = "stylesheet">
+    <link href = "index.css" type = "text/css" rel = "stylesheet">
+    <title>Monty's Power Washing</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body class = "container full-height-grow">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <header class = "main-header">
+        <a href= "/" class="brand-logo">
+            <img src = "/Pictures/logo.png" />
+        </a>
+        
+    </header>
+    <nav class = "main-nav">
+        <ul class = "nav-links">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "estimate-tool.html">Estimate Tool</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1 class = "swiper-header">Check Out Some of My Work!</h1>
+    
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 1.png"> 
+            <img src = "/Pictures/After 1.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 2.png"> 
+            <img src = "/Pictures/After 2.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 3.png"> 
+            <img src = "/Pictures/After 3.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 4.png"> 
+            <img src = "/Pictures/After 4.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 5.png"> 
+            <img src = "/Pictures/After 5.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 6.png"> 
+            <img src = "/Pictures/After 6.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 7.png"> 
+            <img src = "/Pictures/After 7.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 8.png"> 
+            <img src = "/Pictures/After 8.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 9.png"> 
+            <img src = "/Pictures/After 9.png">
+          </div>
+          <div class="swiper-slide">
+            <img src = "/Pictures/Before 10.png"> 
+            <img src = "/Pictures/After 10.png">
+          </div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <script> const swiper = new Swiper('.swiper', {
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+
+    <footer class = "bigfoot-approved">
+        <div class = "not-convinced">
+            <div class = "title">Still Not Convinced?</div>  
+            <div class = "subtitle">Maybe You'll Change Your Mind If You Know We're...</div>
+            <div class = "title">BIGFOOT APPROVED!</div>
+        </div>
+        <div class = "bigfoot-picture">
+          <img src = "/Pictures/IMG_9907.JPG">
+        </div>
+    </footer>
+</body>
+</html>

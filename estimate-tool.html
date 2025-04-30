@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "styles.css" type = "text/css" rel = "stylesheet">
+    <link href = "estimate-tool.css" type = "text/css" rel = "stylesheet">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDf8X8ycXZ4UfX22lRFHz39_8y7xN5GlJU&libraries=places&callback=initAutocomplete&v=weekly" defer></script>
+    <script src = "estimate-tool.js"></script>
+
+    <title>Monty's Power Washing - Estimate Tool</title>
+    
+</head>
+<body class = "container full-height-grow">
+    
+    <header class = "main-header">
+        <a href= "/" class="brand-logo">
+            <img src = "/Pictures/logo.png" />
+        </a>
+        
+    </header>
+    <nav class = "main-nav">
+        <ul class = "nav-links">
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "estimate-tool.html">Estimate Tool</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <input id="auto" type="text" placeholder="Enter your address"/>
+
+    <div id = "services-container">
+        <label for="services" class = "button">Choose a Service:</label>
+        <select id="services" class = "button">
+            <option value="select-option">[Please Select an Option]</option>
+            <optgroup label = "Vertical Surfaces">
+                <option value="metal-fencing">Metal Fencing</option>
+                <option value="wood-fencing">Wood Fencing</option>
+                <option value="railings">Railings</option>
+                <option value="vinyl-siding">Vinyl Siding</option>
+                <option value="stucco-siding">Stucco Siding</option>
+                <option value="wood-siding">Wood Siding</option>
+                <option value="brick-wall">Brick Wall</option>
+                <option value="stone-wall">Stone Wall</option>
+                <option value="other-vertical-surface">Other Vertical Surface</option>
+            </optgroup>
+            <optgroup label = "Ground Surfaces">
+                <option value="concrete">Concrete</option>
+                <option value="asphalt">Asphalt</option>
+                <option value="stone">Stone</option>
+                <option value="sidewalk">Sidewalk</option>
+                <option value="pavers">Pavers</option>
+                <option value="brick">Brick</option>
+                <option value="decking">Decking</option>
+                <option value="other-ground-surface">Other Ground Surface</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <input id="height" type="number" placeholder="Enter the height of your surface (ft)" step="0.01" min="0"/>
+
+    
+
+    <div id = "map"></div>
+
+    <div id = "bottom-buttons">
+        <button id="calculate" class = "button" onclick = "calculateCost()">Calculate</button>
+        <p id="cost"></p>
+        <button id = "add-service" class = "button" onclick = "addService()">Add Another Service</button>
+
+        <button id = "reset" class = "button" onclick = "fullReset()">Reset</button>
+    </div>
+
+</body>
+</html>

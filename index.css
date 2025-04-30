@@ -1,0 +1,65 @@
+.swiper-header {
+    text-align: center;
+    font-size: 2.5vw;
+    font-size: max(12px, min(2.5vw, 20px)); 
+    font-size: clamp(12px, 2.5vw, 20px);
+}
+
+.swiper {
+    width: 80vmin;
+    height: 30vmin;
+    display: flex;
+    .swiper-slide {
+        display:flex;
+    }
+}
+
+.swiper-slide {
+    img {
+        border: 7px solid rgba(0, 128, 0, 0.662);
+    }
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    .swiper {
+        width: 50vmin;
+        height: 78vmin;
+        .swiper-slide {
+            flex-direction: column;
+        }
+    }
+
+    .swiper-slide {
+        align-items: space-between;
+    }
+}
+
+.bigfoot-approved {
+    padding: 2vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+
+.not-convinced {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
+.bigfoot-picture {
+    img {
+        width: 25vmin;
+        border: 3px solid rgba(0, 128, 0, 0.662);
+        border-radius: 25px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
